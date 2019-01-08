@@ -8,41 +8,64 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       </head>
         <body>
-            <!-- Navigation bar -->
-            <div id="pag-nav">
-              <nav class="navbar navbar-inverse">
-                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-sm-4">
-                         <ul class="nav navbar-nav">
-                           <li class="active"><a href="index.html">Home</a></li>
-                           <li><a href="user.html">User</a></li>
-                           <li><a href="admin.html">Admin</a></li>
-                         </ul>
+          <!-- Navigation bar -->
+          <div id="pag-nav">
+            <nav class="navbar navbar-inverse">
+                 <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-4">
+                       <ul class="nav navbar-nav">
+                         <li class="home active"><a href="index.html">Home</a></li>
+                         <li class="user"><a href="user.html">User</a></li>
+                        <li ><a class="admin" href="admin.html">Admin</a></li>
+                       </ul>
+                     </div>
+                    <div class="col-sm-4" style="text-align:center">
+                       <div class="navbar-header">
+                         <a class="navbar-brand" href="#">Bug Bounty Program</a>
                        </div>
-                      <div class="col-sm-8" style="text-align:center">
-                         <div class="navbar-header">
-                           <a class="navbar-brand" href="#">Decentralized Application</a>
-                         </div>
-                       </div>
-                    </div>
+                     </div>
+                     <div class="col-sm-4">
+                        <div class="navbar-header" style="float:right">
+                          <a class="navbar-brand" href="#" >Decentralized Application</a>
+                        </div>
+                      </div>
+                  </div>
 
-                   </div>
-               </nav>
-             </div>
-            <!-- Navigation Bar ends -->
+                 </div>
+             </nav>
+           </div>
+         <!-- Navigation Bar ends -->
             <div class="container-fluid">
               <div class="row">
+                <div class=" col-sm-offset-1 col-sm-12">
+                  <h3 class="indexDescriptionHeader">How to Use The App</h3>
+                   <div style="font-size:16px;">
+                      <strong>Step 1:</strong> Install the <a href="https://metamask.io/" target="_blank">metamask plugin</a> plugin and create an account on Ropsten Test Network and load some Ether.
+                      <br>
+                      <strong>Step 2:</strong> Purchase tokens in User Section by entering the total number of tokens you like to buy.
+                       <br>
+                      <strong>Step 3:</strong> Submit the Bug Report from the User Section using the Tokens.
+                      <br>
+                    <strong>Step 4:</strong> Enter your account address to look up your activity.
+                    <br>
+                    <strong>Step 5:</strong> If you want to be a part of the security team and validate the Bugs, email your public key to girishkathirdy@gmail.com.
+                   </div>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
                       <div class=" col-sm-offset-1 col-sm-10">
-                          <h2>Posts</h2>
-                          <table class="table table-bordered">
+                          <h2>Vulnerability Reports</h2>
+                          <table class="table .table-striped tableDesign" style="border-collapse: unset;" >
                               <thead>
                                   <tr>
                                     <th>#</th>
-                                    <th>Post Details</th>
-                                    <th>Votes</th>
+                                    <th>Bug Type</th>
+                                    <th>Acceptance Votes</th>
                                   </tr>
                               </thead>
                               <tbody id="allPostsTable">
